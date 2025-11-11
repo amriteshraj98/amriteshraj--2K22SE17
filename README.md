@@ -45,10 +45,13 @@ Organize your submission using the following folder structure:
 
 ```
 your-branch/
-├── src/                    # All source code goes here (including src/readme.md)
-├── prompt/                 # LLM chat exports go here
-├── test-cases/            # Test cases and test documentation go here
-└── README.md              # Project documentation
+├── src/                           # All source code goes here
+│   └── readme.md                  # Project documentation (setup, API endpoints, etc.)
+├── prompt/                        # LLM chat exports go here
+│   └── llm-chat-export.txt        # Exported LLM/AI assistant conversations
+├── test-cases/                    # Test cases documentation goes here
+│   └── test-cases.txt             # Documentation on how to run each use case
+└── README.md                      # This file (assignment instructions)
 ```
 
 ### Required Files
@@ -62,14 +65,17 @@ your-branch/
    - Sample requests and responses
 
 
-3. **LLM Chat Export** in the `prompt/` folder:
-   - If you used LLMs/AI assistants, export or save a copy of all prompts and conversations
-   - Can be in any format: text file, markdown, JSON, screenshots, etc.
+3. **LLM Chat Export** - Update `prompt/llm-chat-export.txt`:
+   - If you used LLMs/AI assistants, paste your complete exported conversation in this file
+   - Replace the placeholder content with your actual LLM chat export
 
-4. **Test Cases** in the `test-cases/` folder:
-   - Document how to run your test cases
-   - Can be a text file, markdown, script, or any format you prefer
-   - Include instructions on how to execute the tests
+4. **Test Cases Documentation** - Update `test-cases/test-cases.txt`:
+   - Document how to run each use case from the problem (Recognition, Endorsements, Redemption)
+   - For each core functionality, include:
+     - How to test the feature
+     - Steps to execute the test
+     - Expected results
+   - Replace the placeholder content with your test case documentation
 
 ---
 
@@ -85,15 +91,16 @@ Follow these steps to submit your completed assignment:
 
 2. **Organize your files** according to the folder structure specified in the Deliverables section:
    - Place all source code in the `src/` folder
-   - Place LLM chat exports in the `prompt/` folder
-   - Place test cases in the `test-cases/` folder
+   - Update `src/readme.md` with your project documentation
+   - Update `prompt/llm-chat-export.txt` with your LLM chat export (if applicable)
+   - Update `test-cases/test-cases.txt` with your test case documentation
 
 3. **Ensure all required files** are included:
    - Complete source code in `src/`
-   - `src/readme.md` with setup, run instructions, and API documentation
-   - Sample requests (cURL/Postman) with example responses
-   - LLM chat exports in `prompt/` (if applicable)
-   - Test cases documentation in `test-cases/`
+   - `src/readme.md` updated with setup, run instructions, and API documentation
+   - Sample requests (cURL/Postman) with example responses (can be in `src/readme.md`)
+   - `prompt/llm-chat-export.txt` updated with your LLM chat export (if you used LLMs)
+   - `test-cases/test-cases.txt` updated with documentation on how to run each use case
 
 4. **Verify your application** runs locally and is ready to demo
 
