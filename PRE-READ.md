@@ -1,4 +1,4 @@
-# Pre-read: AI Coding Interview Preparation
+# Pre-read: AI Coding Interview
 
 Congratulations on being shortlisted! This document will help you prepare for the upcoming coding interview round.
 
