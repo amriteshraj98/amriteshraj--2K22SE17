@@ -2,8 +2,7 @@
 
 - You have **90 minutes** to complete 1 design question
 - Use any LLM or AI coding assistant of your choice to help you build the application
-- Your goal is to have the application running locally in your IDE
-- Be creative about how you want to demo your application to the interviewer
+- Your goal is to have the application running locally in your IDE and explain the code and reasoning behind it
 
 # Boostly — boost morale, one kudos at a time
 
@@ -101,46 +100,52 @@ your-repository/
 
 # How to Submit Your Assignment
 
-Follow these steps to submit your completed assignment:
+Once you have finished developing the app locally and it is working. Follow these steps to submit your completed assignment:
 
-1. **Create a private GitHub repository** with the following naming format:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/raso-jr/ai-coding-round.git
+   cd ai-coding-round
+   ```
+
+2. **Add your code** to the cloned repository:
+   - Place all your source code in the `src/` folder
+   - Update `src/readme.md` with your project documentation
+   - Update `prompt/llm-chat-export.txt` with your LLM chat export (if applicable)
+   - Update `test-cases/test-cases.txt` with your test case documentation
+
+3. **Create a public GitHub repository** with the following naming format:
    ```
    firstname-lastname-collegeid
    ```
    Example: `john-doe-2024CS001`
    
    - Go to GitHub and create a new repository
-   - **Make it private** (not public)
-   - Initialize with a README if you want, or start with an empty repository
+   - **Make it public**
+   - Do not initialize with a README (you already have one from the cloned repo)
 
-2. **Organize your files** according to the folder structure specified in the Deliverables section:
-   - Place all source code in the `src/` folder
-   - Update `src/readme.md` with your project documentation
-   - Update `prompt/llm-chat-export.txt` with your LLM chat export (if applicable)
-   - Update `test-cases/test-cases.txt` with your test case documentation
-
-3. **Ensure all required files** are included:
+4. **Verify all required files** are included:
    - Complete source code in `src/`
    - `src/readme.md` updated with setup, run instructions, and API documentation
    - Sample requests (cURL/Postman) with example responses (can be in `src/readme.md`)
    - `prompt/llm-chat-export.txt` updated with your LLM chat export (if you used LLMs)
    - `test-cases/test-cases.txt` updated with documentation on how to run each use case
 
-4. **Verify your application** runs locally and is ready to demo
+5. **Verify your application** runs locally and is ready to demo
 
-5. **Commit and push** your code to your GitHub repository:
+6. **Push your code to your GitHub repository**:
    ```bash
+   git remote remove origin
+   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
    git add .
    git commit -m "Initial submission"
    git push -u origin main
    ```
+   Replace `YOUR_USERNAME` and `YOUR_REPO_NAME` with your GitHub username and repository name.
 
-6. **Add the interviewer as a collaborator and confirm access**:
-   - Go to your repository's **Settings** → **Collaborators**
-   - Click **Add people**
-   - Search for the interviewer's GitHub username and add them with **Read** access
-   - The interviewer's GitHub username will be provided separately
-   - Ensure the interviewer has been added and can access your repository
+7. **Share your repository link**:
+   - A Google form link will be shared with you
+   - Submit your repository URL in the form: `https://github.com/YOUR_USERNAME/YOUR_REPO_NAME`
 
 ---
 
