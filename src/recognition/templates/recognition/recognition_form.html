@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Give Recognition</title>
+</head>
+<body>
+    <h1>Give Recognition to {{ student.username }}</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="credits">Credits:</label>
+        <input type="number" id="credits" name="credits" min="1" max="100" required>
+        <button type="submit">Send Recognition</button>
+    </form>
+    <p><a href="{% url 'student_list' %}">Back to Student List</a></p>
+</body>
+</html>
